@@ -23,7 +23,16 @@ const Navbar = () => {
           height={24}
           className="rounded-full"
         />
-        <h2 className="text-[24px] leading-[30px] font-extrabold text-white">METAVERSUS</h2>
+        <h2 className="text-[24px] leading-[30px] font-extrabold text-white">
+          METAVERSUS
+        </h2>
+        <Image
+          src="/menu.svg"
+          alt="menu"
+          width={24}
+          height={24}
+          className="rounded-full"
+        />
       </div>
     </motion.nav>
   );
