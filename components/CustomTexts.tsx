@@ -6,12 +6,12 @@ import { ReactElement } from "react";
 
 interface typingProps {
   title: string;
-  textStyles: string;
+  textStyles?: string;
 }
 
 interface titleProps {
   title: ReactElement;
-  textStyles: string;
+  textStyles?: string;
 }
 
 export const TypingText = ({ title, textStyles }: typingProps) => {
@@ -28,7 +28,6 @@ export const TypingText = ({ title, textStyles }: typingProps) => {
     </motion.p>
   );
 };
-
 
 export const TitleText = ({ title, textStyles }: titleProps) => {
   return (
