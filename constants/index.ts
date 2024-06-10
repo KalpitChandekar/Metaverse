@@ -1,28 +1,33 @@
 export const exploreWorlds = [
   {
-    id: 'world-1',
-    imgUrl: '/planet-01.png',
-    title: 'The Hogwarts',
+    id: "world-1",
+    imgUrl: "/planet-01.png",
+    title: "The Hogwarts",
+    width: 3624,
   },
   {
-    id: 'world-2',
-    imgUrl: '/planet-02.png',
-    title: 'The Upside Down',
+    id: "world-2",
+    imgUrl: "/planet-02.png",
+    title: "The Upside Down",
+    width: 3909,
   },
   {
-    id: 'world-3',
-    imgUrl: '/planet-03.png',
-    title: 'Kadirojo Permai',
+    id: "world-3",
+    imgUrl: "/planet-03.png",
+    title: "Kadirojo Permai",
+    width: 4722,
   },
   {
-    id: 'world-4',
-    imgUrl: '/planet-04.png',
-    title: 'Paradise Island',
+    id: "world-4",
+    imgUrl: "/planet-04.png",
+    title: "Paradise Island",
+    width: 4212,
   },
   {
-    id: 'world-5',
-    imgUrl: '/planet-05.png',
-    title: 'Hawkins Labs',
+    id: "world-5",
+    imgUrl: "/planet-05.png",
+    title: "Hawkins Labs",
+    width: 6204,
   },
 ];
 
