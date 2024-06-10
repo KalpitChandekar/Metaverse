@@ -2,13 +2,19 @@
 
 import { motion } from "framer-motion";
 import { textContainer, textVariant2 } from "@/utils/motion";
+import { ReactElement } from "react";
 
-interface props {
+interface typingProps {
   title: string;
   textStyles: string;
 }
 
-export const TypingText = ({ title, textStyles }: props) => {
+interface titleProps {
+  title: ReactElement;
+  textStyles: string;
+}
+
+export const TypingText = ({ title, textStyles }: typingProps) => {
   return (
     <motion.p
       variants={textContainer as any}
@@ -23,13 +29,16 @@ export const TypingText = ({ title, textStyles }: props) => {
   );
 };
 
-export const TitleText = ({ title, textStyles }: any) => {
-  <motion.h2
-    variants={textVariant2}
-    initial="hidden"
-    whileInView="show"
-    className={`mt-[8px] font-bold md:text-[64px] text-[40px] text-white ${textStyles}`}
-  >
-    {title}
-  </motion.h2>;
+
+export const TitleText = ({ title, textStyles }: titleProps) => {
+  return (
+    <motion.h2
+      variants={textVariant2}
+      initial="hidden"
+      whileInView="show"
+      className={`mt-[8px] font-bold md:text-[64px] text-[40px] text-white ${textStyles}`}
+    >
+      {title}
+    </motion.h2>
+  );
 };
