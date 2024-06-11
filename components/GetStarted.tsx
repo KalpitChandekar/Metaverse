@@ -18,7 +18,7 @@ const GetStarted = () => {
         className="2xl:max-w-[1280px] w-full mx-auto flex lg:flex-row flex-col gap-8"
       >
         <motion.div
-          variants={planetVariants("left")}
+          variants={planetVariants({ direction: "left" })}
           className="flex-1 flex justify-center items-center"
         >
           <Image

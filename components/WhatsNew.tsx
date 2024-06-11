@@ -1,8 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-
-import styles from "../styles";
 import { newFeatures } from "../constants";
 import { planetVariants, staggerContainer, fadeIn } from "../utils/motion";
 import { TitleText, TypingText } from "./CustomTexts";
@@ -11,13 +9,13 @@ import Image from "next/image";
 
 const WhatsNew = () => {
   return (
-    <section className={`${styles.paddings} relative z-10`}>
+    <section className="sm:p-16 xs:p-8 px-6 py-12 relative z-10">
       <motion.div
         variants={staggerContainer as any}
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }}
-        className={`${styles.innerWidth} mx-auto flex lg:flex-row flex-col gap-8`}
+        className="2xl:max-w-[1280px] w-full mx-auto flex lg:flex-row flex-col gap-8"
       >
         <motion.div
           variants={fadeIn({
@@ -38,8 +36,8 @@ const WhatsNew = () => {
         </motion.div>
 
         <motion.div
-          variants={planetVariants("right")}
-          className={`flex-1 ${styles.flexCenter}`}
+          variants={planetVariants({ direction: "right" })}
+          className="flex-1 flex justify-center items-center"
         >
           <Image
             src="/whats-new.png"
