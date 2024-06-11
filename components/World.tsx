@@ -80,7 +80,7 @@ const World = () => {
               width={4700}
               src="/planet-09.png"
               alt="planet"
-              className="w-full h-full rounded-2xl"
+              className="w-full h-full rounded-2xl object-cover"
             />
             <div className="absolute bottom-2 p-2">
               <h2 className="text-[18px] font-semibold text-white ">
@@ -95,7 +95,7 @@ const World = () => {
               width={1875}
               src="/planet-07.png"
               alt="planet"
-              className="w-full h-full rounded-2xl"
+              className="w-full h-full rounded-2xl object-cover"
             />
             <div className="absolute bottom-2 p-2">
               <h2 className="text-[18px] font-semibold text-white ">
