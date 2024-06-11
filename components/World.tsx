@@ -44,7 +44,11 @@ const World = () => {
             className="w-full h-full object-cover"
           />
 
-          <div className="absolute bottom-20 right-20 w-[70px] h-[70px] p-[6px] rounded-full bg-[#5D6680]">
+          <motion.div
+            animate={{ rotate: 360 }}
+            transition={{ repeat: Infinity, duration: 10, ease: "linear" }}
+            className="absolute bottom-20 right-20 w-[70px] h-[70px] p-[6px] rounded-full bg-[#5D6680]"
+          >
             <Image
               height={122}
               width={122}
@@ -52,9 +56,13 @@ const World = () => {
               alt="people"
               className="w-full h-full"
             />
-          </div>
+          </motion.div>
 
-          <div className="absolute top-10 left-20 w-[70px] h-[70px] p-[6px] rounded-full bg-[#5D6680]">
+          <motion.div
+            animate={{ rotate: 360 }}
+            transition={{ repeat: Infinity, duration: 10, ease: "linear" }}
+            className="absolute top-10 left-20 w-[70px] h-[70px] p-[6px] rounded-full bg-[#5D6680]"
+          >
             <Image
               height={122}
               width={122}
@@ -62,9 +70,13 @@ const World = () => {
               alt="people"
               className="w-full h-full"
             />
-          </div>
+          </motion.div>
 
-          <div className="absolute top-1/3 left-[45%] w-[70px] h-[70px] p-[6px] rounded-full bg-[#5D6680]">
+          <motion.div
+            animate={{ rotate: 360 }}
+            transition={{ repeat: Infinity, duration: 10, ease: "linear" }}
+            className="absolute top-1/3 left-[45%] w-[70px] h-[70px] p-[6px] rounded-full bg-[#5D6680]"
+          >
             <Image
               height={122}
               width={122}
@@ -72,9 +84,13 @@ const World = () => {
               alt="people"
               className="w-full h-full"
             />
-          </div>
+          </motion.div>
 
-          <div className="hidden md:block absolute bottom-24 left-36  w-[200px] h-[150px] p-[6px] rounded-2xl bg-[#5D6680]">
+          <motion.div
+            animate={{ rotate: 360 }}
+            transition={{ repeat: Infinity, duration: 16, ease: "linear" }}
+            className="hidden md:block absolute bottom-24 left-36  w-[200px] h-[150px] p-[6px] rounded-2xl bg-[#5D6680]"
+          >
             <Image
               height={2200}
               width={4700}
@@ -82,14 +98,18 @@ const World = () => {
               alt="planet"
               className="w-full h-full rounded-2xl object-cover"
             />
-            <div className="absolute bottom-2 p-2">
-              <h2 className="text-[18px] font-semibold text-white ">
+            <div className="absolute bottom-2 p-2 w-full">
+              <h2 className="text-[18px] font-semibold text-white text-center">
                 The Upside Down
               </h2>
             </div>
-          </div>
+          </motion.div>
 
-          <div className="hidden md:block absolute top-8 right-32  w-[200px] h-[150px] p-[6px] rounded-2xl bg-[#5D6680]">
+          <motion.div
+            animate={{ rotate: 360 }}
+            transition={{ repeat: Infinity, duration: 16, ease: "linear" }}
+            className="hidden md:block absolute top-8 right-32  w-[200px] h-[150px] p-[6px] rounded-2xl bg-[#5D6680]"
+          >
             <Image
               height={750}
               width={1875}
@@ -97,12 +117,12 @@ const World = () => {
               alt="planet"
               className="w-full h-full rounded-2xl object-cover"
             />
-            <div className="absolute bottom-2 p-2">
-              <h2 className="text-[18px] font-semibold text-white ">
+            <div className="absolute bottom-2 p-2 w-full">
+              <h2 className="text-[18px] font-semibold text-white text-center">
                 Hawkins Lab
               </h2>
             </div>
-          </div>
+          </motion.div>
         </motion.div>
       </motion.div>
     </section>
