@@ -1,5 +1,7 @@
 import About from "@/components/About";
 import Explore from "@/components/Explore";
+import Feedback from "@/components/Feedback";
+import Footer from "@/components/Footer";
 import GetStarted from "@/components/GetStarted";
 import Hero from "@/components/Hero";
 import Insights from "@/components/Insights";
@@ -26,9 +28,9 @@ const page = () => {
       <div className="relative">
         <Insights />
         <div className="gradient-04 z-0" />
-        {/* <Feedback /> */}
+        <Feedback />
       </div>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };
