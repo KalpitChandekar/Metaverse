@@ -4,6 +4,7 @@ import GetStarted from "@/components/GetStarted";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import WhatsNew from "@/components/WhatsNew";
+import World from "@/components/World";
 
 const page = () => {
   return (
@@ -20,6 +21,7 @@ const page = () => {
         <div className="gradient-04 z-0" />
         <WhatsNew />
       </div>
+      <World />
     </div>
   );
 };
