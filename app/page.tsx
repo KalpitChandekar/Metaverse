@@ -3,6 +3,7 @@ import Explore from "@/components/Explore";
 import GetStarted from "@/components/GetStarted";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
+import WhatsNew from "@/components/WhatsNew";
 
 const page = () => {
   return (
@@ -17,7 +18,7 @@ const page = () => {
       <div className="relative">
         <GetStarted />
         <div className="gradient-04 z-0" />
-        {/* <WhatsNew /> */}
+        <WhatsNew />
       </div>
     </div>
   );
